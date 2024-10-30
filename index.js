@@ -3,6 +3,7 @@ Draw.loadPlugin(function(ui) {
         var e = ui.editor.graph;
         var layout = new mxFastOrganicLayout(e);
         layout.execute(e.getDefaultParent());
+        console.log("sometest");
     }, null, null, "Ctrl+Shift+Q");
 
     ui.keyHandler.bindAction(81, !0, "myOrganicFlow", !0);
